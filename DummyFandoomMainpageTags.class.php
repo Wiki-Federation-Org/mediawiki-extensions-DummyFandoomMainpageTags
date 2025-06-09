@@ -26,7 +26,7 @@ class DummyFandoomMainpageTags {
 	}
 
 /*
-<div class="main-page-tag-lcs main-page-tag-lcs-exploded" style="margin-right: -310px; "><div class="lcs-container" style="margin-right: 310px;">
+<div class="main-page-tag-lcs main-page-tag-lcs-exploded"><div class="lcs-container">
 </div></div>
 <div class="main-page-tag-rcs"><div class="rcs-container">
 </div></div>
@@ -34,14 +34,12 @@ class DummyFandoomMainpageTags {
 	public static function renderLeftColumn( $input, $args, Parser $parser ) {
 		$htmlOut = Xml::openElement( 'div',
 			[
-				'class' => 'main-page-tag-lcs main-page-tag-lcs-exploded',
-				'style' => 'margin-right: -310px;'
+				'class' => 'main-page-tag-lcs main-page-tag-lcs-exploded'
 			]
 		);
 		$htmlOut .= Xml::openElement( 'div',
 			[
-				'class' => 'lcs-container',
-				'style' => 'margin-right: 310px;'
+				'class' => 'lcs-container'
 			]
 		);
 		$parser->getOutput()->addModuleStyles( [
